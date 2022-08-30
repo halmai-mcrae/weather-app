@@ -1,4 +1,5 @@
 import './App.css'
+import Forecast from './components/Forecast'
 import CurrentWeather from './components/CurrentWeather'
 import Search from './components/Search'
 import { useState } from 'react'
@@ -28,12 +29,15 @@ function App() {
       })
       .catch((error) => console.log(error))
   }
-
+//Todo:
+//create forecast component
+//dot.env file
   
   return (
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
+      {forecast && <Forecast data={forecast} />}
     </div>
   )
 }
