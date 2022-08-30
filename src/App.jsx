@@ -29,9 +29,6 @@ function App() {
       })
       .catch((error) => console.log(error))
   }
-//Todo:
-//create forecast component
-//dot.env file
   
   return (
     <div className="container">
